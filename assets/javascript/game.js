@@ -1,5 +1,6 @@
 
 // array of word options
+$(document).ready(function() {
 let words = [ "spain", "italy", "england", "irland", "germany", "holland", "portugal", "france"];
 let lettersGuessed = [];
 let numberSpaces = [];
@@ -53,6 +54,7 @@ document.onkeyup = function(event) {
     wins++;
     document.getElementById("win-win").textContent = wins;
     init();
-  } 
-}
+  }
+  };
+});
 
